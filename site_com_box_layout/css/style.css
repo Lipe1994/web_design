@@ -8,6 +8,7 @@ p{
     line-height: 1.2em;
 }
 
+
 .subtitulo{
     font-size: 1.5em;
     font-weight: bold;
@@ -86,6 +87,11 @@ p{
     padding: 10px 0;
 }
 
+.header_menu ul li a.menu-ativo{
+    color:#FFF
+}
+
+
 .header_menu ul li a:hover{
     color: #FFF;
 }
@@ -110,6 +116,18 @@ p{
     font-weight: bold;
     text-transform: uppercase;
 }
+/*
+    introdução-interna
+*/
+.introducao-interna{
+    margin-top: 96px;
+    height: 160px;
+    display: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 
 .quote-externo{
     max-width: 320px;
@@ -221,7 +239,7 @@ portifolio
 
 .qualidade{
     margin: 40px auto;
-    
+    overflow: auto;
 }
 
 .qualidade::after{
@@ -236,7 +254,6 @@ portifolio
     top:130px;
     margin: 0 auto;
     right: 162px;
-    
 }
 
 
@@ -247,6 +264,7 @@ portifolio
 
 .qualidade li{
     padding: 0 20px;
+    overflow: auto;
 }
 
 .qualidade h3{
