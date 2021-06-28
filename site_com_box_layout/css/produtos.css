@@ -169,3 +169,7 @@
 .form-contato ul li:nth-child(odd){
     background-color: #1d1d1d;
 }
+
+.quebra{
+    margin: 0;
+}
