@@ -1,5 +1,5 @@
 .introducao-produtos{
-    background-image: url("../img/bg-produtos.jpg");
+    background-image: url("../img/bg-contato.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,70 +25,7 @@
     margin: 0 auto;
 }
 
-.produtos{
-    overflow: auto;
-}
-
-.produto-icone{
-    background-color: #000;
-    text-align: center;
-    height: 280px;
-}
-
-.produto-icone{
-    padding-top: 70px;
-
-}
-
-.produtos h2{
-    position: relative;
-    top: -150px;
-    color: #FFF;
-    text-align: center;
-    margin-bottom: -40px;
-}
-
-.produtos h2::before, .produtos h2::after{
-    content: "";
-    display: block;
-    width: 80px;
-    height: 2px;
-    background-color: #FFF;
-    margin: 0 auto;
-}
-
-.produto-info{
-    background-color: #000;
-}
-
-.produto-info p{
-    font-weight: bolder;
-    padding: 20px 20px;
-    color: #FFF;
-
-    padding-bottom: 145px;
-
-}
-
-.produto-info ul li{
-    background-color: #fec63e;
-    text-align: center;
-    width: 229px;
-    float: left;
-    font-weight: bold;
-    padding: 8px 0;
-}
-
-.produto-info ul li:nth-child(odd){
-    margin-right: 2px;
-}
-
-.produto-info ul li:nth-child(3), .produto-info ul li:nth-child(4){
-    margin-top: 2px;
-}
-
 .form-contato{
-    background-color: #000;
     overflow: auto;
     padding: 40px 0;
 }
@@ -98,7 +35,6 @@
 }
 
 .form-contato label{
-    color: #FFF;
     font-size: 1em;
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.5em;
@@ -129,7 +65,6 @@
 }
 
 .form-contato span{
-    color:#FFF;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
@@ -162,12 +97,13 @@
 
 .form-contato ul li{
     color: #FFF;
-    display: block;
+    display: inline-block;
     padding: 8px 10px;
 }
 
-.form-contato ul li:nth-child(odd){
-    background-color: #1d1d1d;
+.endereco{
+    overflow: auto;
+    padding: 40px 0;
 }
 
 .quebra{
