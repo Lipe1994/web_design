@@ -18,11 +18,28 @@
     clear: both;
 }
 
+
 .grid{
     float: left;
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/*
+TODO:
+    PARA GURADAR PARA VIDA - FORMULA PARA CALCULAR TAMANHO DOS GRIDS
+
+    (Container / TotalColunas x QtdColunas) - Gutter
+
+    Ex.: 
+        grid-6
+        (Container / TotalColunas x QtdColunas) - Gutter
+        (960px / 16 colunas . 6 ) - 20px
+        (60px / 6) - 20px
+        (360)-20
+        340px
+        =>340px<=
+*/
 
 .grid-1 	{width: 40px;}
 .grid-2 	{width: 100px;}
@@ -41,3 +58,11 @@
 .grid-15 	{width: 880px;}
 .grid-16 	{width: 940px;}
 .grid-1-3	{width: 300px;}
+
+@media only screen and (min-width: 768) and (max-width: 859){
+
+}
+
+@media only screen and (max-width: 767){
+
+}
