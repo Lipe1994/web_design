@@ -2,6 +2,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 p{
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.8em;
@@ -68,7 +73,7 @@ h2{
     background-color: #fec63e;
     position: fixed;
     top: 0;
-    padding: 15px 0;
+    padding: 20px 0;
     z-index: 10;
 }
 
@@ -91,12 +96,12 @@ h2{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: .8em;
+    font-size: 1em;
     line-height: 20px;
     padding: 10px 0;
 }
 
-.header_menu ul li a.menu-ativo{
+.header_menu ul li.menu-ativo a{
     color:#FFF
 }
 
@@ -199,6 +204,11 @@ h2{
 .produtos-lista-img{
     background-color: #000;
     padding: 20px;
+    margin: 0 auto;
+}
+
+.produtos-lista-img img{
+    margin: 0 auto;
 }
 
 .call-to-action{
@@ -269,6 +279,7 @@ portifolio
 .qualidade img{
     display: block;
     margin: 10px auto;
+
 }
 
 .qualidade li{
@@ -350,4 +361,75 @@ footer{
     font-size: .8em;
     padding: 20px 0;
     
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .qualidade::after{
+        right: 66px;
+    }
+
+    .qualidade h3{
+        margin: 20px 0;
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+
+    .header{
+        position: relative;
+    }
+    
+    .header img{
+        margin: 0 auto;
+    }
+
+    .header_menu{
+        text-align: center;
+    }
+    
+    .header_menu ul li{
+        padding:10px;
+        width: 140px;
+        border-style: solid;
+        border-width: 4px;
+        margin: 0;
+        margin-top: 10px;
+        margin-right: 5px;
+
+    }
+    
+    .header_menu ul li:hover, .header_menu ul li:hover a{
+        color: #FFF;
+    }
+    
+    .header_menu ul li.menu-ativo{
+        color: #FFF;
+        border-color: #FFF;
+    }
+
+    
+
+    /*
+    introdução
+    */
+    .introducao{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .introducao-interna{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .qualidade::after{
+        display: none;
+    }
+
+    .portifolio ul li{
+        margin-top: 20px;
+    }
+
 }

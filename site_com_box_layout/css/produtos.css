@@ -28,6 +28,9 @@
 .produtos{
     overflow: auto;
 }
+.produtos img{
+    margin: 0 auto;
+}
 
 .produto-icone{
     background-color: #000;
@@ -172,4 +175,68 @@
 
 .quebra{
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .produto-icone{
+        height: 222px;
+    }
+
+    
+    .produto-icone{
+        padding-top: 40px;
+    
+    }
+    
+    .produtos h2{
+        top: -150px;
+        margin-bottom: -40px;
+    }
+
+    
+    .produto-info p{
+        padding-bottom: 72px;
+    }
+    
+    .produto-info ul li{
+        width: 181px;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .produto-icone{
+        height: 222px;
+    }
+
+    
+    .produto-icone{
+        padding-top: 40px;
+    
+    }
+    
+    .produtos h2{
+        top: -100px;
+        margin-bottom: -40px;
+    }
+    
+    .produto-info p{
+        padding: 20px;
+        height: auto;
+    }
+    
+    .produto-info ul li{
+        width: 149px;
+    }
+
+
+    .form-contato form{
+        padding-right: 0px;
+    }
+
+    .form-contato h3:nth-child(1){
+        margin-top: 40px;
+    }
 }
