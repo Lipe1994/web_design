@@ -61,15 +61,15 @@ estrutural e forma a comunicação.” Wikipédia
 
 #### Fontes com serifa e sem serifa
 
-    ![com serifa e sem serifa](./serifa.png)
+![com serifa e sem serifa](./serifa.png)
 
 
 #### Fontes góticas
 
-    ![Fontes góticas](./gotica.jpg)
+![Fontes góticas](./gotica.jpg)
 
 
 #### Fontes Script
 
-    ![Fontes Script](./script.jpg)
+![Fontes Script](./script.jpg)
 
