@@ -1,5 +1,6 @@
 #### Cores
-- "Há poucos estímulos visuais tão potentes quanto as cores, elas são uma ferramenta de comunicação extremamente útil." Timothy Samara
+
+"Há poucos estímulos visuais tão potentes quanto as cores, elas são uma ferramenta de comunicação extremamente útil." Timothy Samara
 
 #### Círculo cromático
 

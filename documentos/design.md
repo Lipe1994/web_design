@@ -1,12 +1,13 @@
 #### O que é Design ?
 
-- "Design é acrescentar valor e significado, simplificar, esclarecer, modificar, dignificar, dramatizar, persuadir e talvez até mesmo entreter." Paul Rand
+"Design é acrescentar valor e significado, simplificar, esclarecer, modificar, dignificar, dramatizar, persuadir e talvez até mesmo entreter." Paul Rand
 
 
 #### Fundamentos do Design
 
 - Forma e espaço:
     Formas Geometricas pode ser Angulosas ou Artificiais.
+
 - Forma orgânica:
     Curvilíneas ou Gestuais.
 

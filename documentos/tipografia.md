@@ -1,7 +1,9 @@
 #### Tipografia: 
-    - “É a arte e processo de criação de um 
+
+"É a arte e processo de criação de um 
 texto. O objetivo principal é dar ordem 
-estrutural e forma a comunicação.” Wikipédia
+estrutural e forma a comunicação." Wikipédia
+
 
 #### Variáveis tipográficas:
     - Tamanho do tipo
