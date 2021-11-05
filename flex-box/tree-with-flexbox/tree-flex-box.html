@@ -1,0 +1,217 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  #tree{
+    min-width: 600px;
+  }
+
+  ul:first-of-type {
+    width: 100%;
+    background-color: white;
+    color: purple;
+  }
+   
+  ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  a{
+    text-decoration: none;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    z-index: 3;
+    position: relative;
+    font-size: 13px;
+    font-family: roboto;
+    background-color: white;
+    color: purple;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0;
+    text-align: center;
+
+  }
+  
+  li{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  ul>li{
+    margin-top: 50px;
+  }
+  
+  li>div{
+    width: 100%;
+    text-align: center;
+  }
+
+  li>div::before{
+    content: '';
+    outline: purple solid 1px;
+    height: 20px;
+    top:-20px;
+    z-index: 0;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+  }
+
+  li:first-of-type:before{
+    content: '';
+    outline: purple solid 1px;
+
+    top:-20px;
+    z-index: 0;
+    left: 50%;
+    right: 0;
+    position: absolute;
+  }
+
+  li:last-of-type:before{
+    content: '';
+    outline: purple solid 1px;
+    top:-20px;
+    z-index: 0;
+    left: 0;
+    right: 50%;
+    position: absolute;
+  }
+  li:not(:last-of-type):not(:first-of-type):before{
+    content: '';
+    outline: purple solid 1px;
+    top:-20px;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  li:is(:last-of-type):is(:first-of-type):before{
+    content: '';
+    outline: purple solid 1px;
+    top:-20px;
+    z-index: 0;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+  }
+
+  li>div:not(:last-child)>a:after{
+    content: '...';
+    outline: purple solid 1px;
+    height: 45px;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+
+    position: absolute;
+  }
+
+  li::before{
+    content: '';
+    outline: purple solid 1px;
+    top:-20px;
+    z-index: 0;
+    left: 0;
+    right: 50%;
+    position: absolute;
+  }
+
+
+
+  #root>div::before{
+    content: '';
+    outline: purple solid 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    a{
+      padding: 2px;
+      font-size: 10px
+    }
+  }
+
+</style>
+
+<div id="tree">
+  
+  <ul>
+      <li id="root">
+        <div><a href="#">Filipe</a></div>
+        <ul>
+          <li>
+              <div><a href="#">Back</a></div>
+              <ul>
+                <li>
+                  <div><a href="#">C#</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">.Net</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">JS</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">Node</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">BD</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">SQL</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">NoSQL</a></div>
+                    </li>
+                  </ul>
+      
+              </li>
+              </ul>
+  
+          </li>
+          <li>
+              <div><a href="#">Front</a></div>
+              <ul>
+                <li>
+                  <div><a href="#">HTML</a></div>
+                </li>
+                <li>
+                  <div><a href="#">CSS</a></div>
+                </li>
+                <li>
+                  <div><a href="#">JS</a></div>
+                  <ul>
+                    <li>
+                      <div><a href="#">Angular</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">React</a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div><a href="#">Flutter</a></div>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </li>
+  </ul>
+<div>

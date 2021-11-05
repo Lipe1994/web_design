@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flex.css" />
+    <title>Exemplo CSS flex-layout testando os itens do container flex</title>
+</head>
+<body>
+
+    <section>
+        <h2>Exemplo 01 - flex-grow</h2>
+        <p>flex-grow, diz respeito ao tamanho proporcional que o item irá ocupar, padrão é 0(0 permanece do tamanho do conteúdo)</p>
+        <div class="flex-layout">
+            <div class="item flex-grow-0">item 01</div>
+            <div class="item flex-grow-1">item 02</div>
+            <div class="item flex-grow-2">item 03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exemplo 02 - flex-basis</h2>
+        <p>flex-basis, diz respeito ao tamanho proporcional antes da distribuição do espaço restante</p>
+        <div class="flex-layout">
+            <div class="item flex-basis-auto flex-grow-2">item 01</div>
+            <div class="item flex-basis-120px flex-grow-2">item 02</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exemplo 03 - flex-shrink</h2>
+        <p>flex-shrink, diz respeito se o item ficará do tamanho do conteúdo ou se poderá diminuir em 1 ou mais vezes dependendo da necessidade</p>
+        <div class="flex-layout">
+            <div class="item flex-basis-120px flex-shrink-0">item 01</div>
+            <div class="item flex-basis-120px flex-shrink-1">item 02</div>
+            <div class="item flex-basis-120px flex-shrink-2">item 03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exemplo 04 - align-self</h2>
+        <p>align-self, alinha o item  no eixo cross-axis</p>
+        <div class="height-100 flex-layout flex-direction-row flex-justify-content-space-between">
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-start">item 02 start</div>
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-center">item 03 center</div>
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-end">item 01 end</div>
+        </div>
+
+        <div class="height-100 flex-layout flex-direction-column">
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-start">item 02 start</div>
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-center">item 03 center</div>
+            <div class="item flex-grow-0 flex-basis-0 item-align-self-end">item 01 end</div>
+        </div>
+    </section>
+
+</body>
+</html>
