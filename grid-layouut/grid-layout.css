@@ -1,0 +1,142 @@
+section{
+    margin-bottom: 5px;
+    width: 300px;
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.height-100{
+    height: 100px;
+    border-color: tomato;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.grid-layout{
+    display: grid;
+}
+
+.grid-two-coluns-200px{
+    grid-template-columns: 200px 200px;
+}
+
+.grid-two-coluns-1fr{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-three-coluns-1fr{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-five-coluns-1fr{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-two-coluns-1minmax200px1fr-1fr{
+    grid-template-columns: minmax(200px, 1fr) 1fr;
+}
+
+.grid-two-coluns-with-repeat-1fr{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-coluns-with-repeat-auto-fit-150px{
+    grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.grid-coluns-with-repeat-auto-fit-width-betwen-110px-auto{
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+}
+.grid-coluns-with-repeat-auto-fill-width-betwen-110px-auto{
+    grid-template-columns: repeat(auto-fill, minmax(110px, auto));
+}
+
+.grid-rows{
+    grid-template-rows: 100px auto 50px;
+    gap: 10px
+}
+
+.grid-columns-and-rows{
+    grid-template-rows: 100px 150px 50px;/*repeat() too is valid here*/
+    grid-template-columns: 50px auto 25px;
+    gap: 10px
+}
+
+/*Areas*/
+.grid-layout-2{
+    display: grid;
+    grid-template-areas: 
+        "a b b"
+        "c d e"
+        "c f f"
+    ;
+}
+
+.logo{
+    grid-area: a;
+}
+
+.nav{
+    grid-area: b;
+}
+
+.sidebar{
+    grid-area: c;
+}
+
+.content{
+    grid-area: d;
+}
+
+.adv{
+    grid-area: e;
+}
+
+.footer{
+    grid-area: f;
+}
+/*end Areas*/
+
+.grid-template{
+    display: grid;
+    grid-template: 100px 50px / repeat(auto-fit, minmax(100px, auto));/* rows/columns */
+}
+
+.grid-template-2{
+    display: grid;
+    grid-template:         
+    "a b b" 50px
+    "c d e" 100px
+    "c f f" minmax(60px, auto)
+    /
+    100px 1fr 2fr
+    ;
+}
+
+.grid-auto-columns{
+    display: grid;
+    grid-template-columns: 35px 35px;
+    grid-auto-columns: 50px 80px;
+}
+
+.grid-gap{
+    gap: 5px;
+}
+
+.grid-gap-rows10px-columns25px{
+    gap: 10px 25px;
+}
+
+/*Only items*/
+.item{
+    background-color: rgb(139, 89, 139);
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+}
+
+.item-grid-column-6{
+    grid-column: 6;
+}
+

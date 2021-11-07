@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <link rel="stylesheet" href="./grid-layout.css"/>
+</head>
+<body>
+    <section>
+        <h2>layout com Grid</h2>
+        <div class=" grid-layout" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+    <section>
+        <h2>layout com Grid - two columns with 200px</h2>
+        <div class="grid-layout grid-two-coluns-200px" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+    <section>
+        <h2>layout com Grid - two columns with 1fr</h2>
+        <div class="grid-layout grid-two-coluns-1fr" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - grid with subgrid</h2>
+        <div class="grid-layout grid-three-coluns-1fr" >
+            <div class="item">01</div>
+            <div class="item grid-layout grid-three-coluns-1fr grid-gap">
+                <div class="item">2.1</div>
+                <div class="item">2.2</div>
+                <div class="item">2.3</div>
+            </div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - More columns then items</h2>
+        <div class="grid-layout grid-five-coluns-1fr" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>layout com Grid - More columns then items</h2>
+        <div class="grid-layout grid-two-coluns-1minmax200px1fr-1fr" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - Grid Define quantity of columns with repeat</h2>
+        <div class="grid-layout grid-coluns-with-repeat-auto-fit-150px" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - in grid use Repeat with auto-fit and minmax with max auto </h2>
+        <div class="grid-layout grid-coluns-with-repeat-auto-fit-width-betwen-110px-auto" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - in grid use Repeat with auto-fit and minmax with max auto (1 item)</h2>
+        <div class="grid-layout grid-coluns-with-repeat-auto-fit-width-betwen-110px-auto" >
+            <div class="item">01</div>
+        </div>
+        <hr/>
+        <h2>layout com Grid - in grid use Repeat with auto-fill and minmax with max auto </h2>
+        <div class="grid-layout grid-coluns-with-repeat-auto-fill-width-betwen-110px-auto" >
+            <div class="item">01</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - grid template rows</h2>
+        <div class="grid-layout grid-rows" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - grid template rows and columns</h2>
+        <div class="grid-layout grid-columns-and-rows" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+            <div class="item">06</div>
+            <div class="item">07</div>
+            <div class="item">08</div>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>layout com Grid - Using grid area</h2>
+        <div class="grid-layout-2" >
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item sidebar">sidebar</div>
+            <div class="item content">content</div>
+            <div class="item adv">advert</div>
+            <div class="item footer">footer</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - Grid template, shortcut to grid-templete-columns and grid-template-rows</h2>
+        <div class="grid-template" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+            <div class="item">06</div>
+        </div>
+
+        <h2>layout com Grid - Grid template, shortcut to grid-template-area and grid-template-rows and grid columns</h2>
+        <div class="grid-template-2" >
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item sidebar">sidebar</div>
+            <div class="item content">content</div>
+            <div class="item adv">advert</div>
+            <div class="item footer">footer</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>layout com Grid - Using grid auto columns and gap</h2>
+        <div class="grid-auto-columns grid-gap-rows10px-columns25px" >
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+            <div class="item item-grid-column-6">06</div>
+            <div class="item">07</div>
+            <div class="item">08</div>
+        </div>
+    </section>
+    
+</body>
+</html>
